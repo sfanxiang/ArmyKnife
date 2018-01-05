@@ -239,7 +239,7 @@ AudioAttribute::Read()
 
 				if(m_file->ReadAttr(m_attribute, B_STRING_TYPE, 0, m_value, info.size) <= 0)
 				{
-					PRINT(("Error reading B_STRING_TYPE attribute %s.\n", m_attribute));
+					fprintf(stderr, "Error reading B_STRING_TYPE attribute %s.\n", m_attribute);
 					return B_ERROR;
 				}
 				fprintf(stderr, "m_value=%s\n", m_value);
