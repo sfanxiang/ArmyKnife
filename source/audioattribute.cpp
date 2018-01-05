@@ -242,6 +242,7 @@ AudioAttribute::Read()
 					PRINT(("Error reading B_STRING_TYPE attribute %s.\n", m_attribute));
 					return B_ERROR;
 				}
+				fprintf(stderr, "m_value=%s\n", m_value);
 			}
 			break;
 		case B_INT32_TYPE:
